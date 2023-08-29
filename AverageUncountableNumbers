@@ -1,0 +1,21 @@
+print('''important guide : \n
+this program shows the average for uncountable numbers, enter the numbers as much\
+as you want BUT FOR STOPPING THE PROGRAM AND SEE THE AVERAGE, ENTER 0.0 .\n''')
+
+
+st=[]
+while True :
+    x = eval(input('enter number : '))
+    st.append(x)
+    if x == 0.0 :
+        break
+        
+st.remove(0.0)
+
+x = 0
+for i in st :
+    x += i
+
+print()
+print('the average of',len(st),'given numbers, is :', x/len(st))
+    
